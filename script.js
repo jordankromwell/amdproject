@@ -3,6 +3,11 @@ $(".slider-main_component").each(function (index) {
     slidesPerView: "auto",
     speed: 700,
     keyboard: true,
-    mousewheel: true,
+    mousewheel: {
+      forceToAxis: true
+    },
+    freeMode: true,
+    slideToClickedSlide: true,
+    spaceBetween: "2%"
   });
 });
